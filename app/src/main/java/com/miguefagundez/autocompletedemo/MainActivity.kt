@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupAutoComplete() {
         autoCompleteTextView.setAdapter(adapter)
+        // Checking list after write the first character
         autoCompleteTextView.threshold = 1
     }
 
@@ -48,6 +49,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupListCountries() {
+        // Taking list of countries from strings.xml
         listCountries = resources.getStringArray(R.array.countries)
     }
 
